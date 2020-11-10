@@ -1,0 +1,83 @@
+body {
+  text-align: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+  display: none;
+}
+
+/* --------------- */
+/* --------------- */
+
+/* 1280px to 1024px - desktop */
+/* 1024px to 768px - tablet landscape mode */
+/* 768px to 480px - tablet */
+/* 480px to less - phone landscape mode and smaller */
+
+/* --------------- */
+/* --------------- */
+
+/* small devices: styles applied from 0px to 480px // apply styles for everything below 480px */
+@media (max-width: 480px) {
+  body {
+    background-color: red;
+  }
+
+  .small-devices h1 {
+    display: block;
+  }
+}
+
+/* small phones to small tablets 481px to 767px */
+@media only screen and (min-width: 481px) and (max-width: 767px) {
+  body {
+    background-color: aqua;
+  }
+
+  .tablet h1 {
+    display: block;
+  }
+}
+
+/* small tablet to big tablet - from 768px to 1023px */
+@media (min-width: 768px) and (max-width: 1023px) {
+  body {
+    background-color: orange;
+  }
+  .normal h1 {
+    display: block;
+  }
+}
+
+/* laptop from 1024px to 1280px*/
+@media (min-width: 1024px) and (max-width: 1280px) {
+  body {
+    background-color: violet;
+  }
+  .laptop h1 {
+    display: block;
+    font-size: 40px;
+  }
+}
+
+/* from a laptop to a the biggest monitor alive > 1281px*/
+@media (min-width: 1281px) {
+  body {
+    background-color: pink;
+  }
+  .monitor h1 {
+    display: block;
+    font-size: 50px;
+  }
+}
+
+/* Just for print */
+@media only print {
+  h1 {
+    display: block;
+  }
+  body {
+    color: greenyellow;
+  }
+}

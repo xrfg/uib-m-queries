@@ -1,0 +1,128 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+main {
+  background-color: tomato;
+  padding: 5rem;
+  color: white;
+}
+
+h1 {
+  font-size: 6rem;
+}
+
+p {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-color: teal;
+  color: white;
+  border: none;
+  padding: 1rem 1.5rem;
+  text-transform: uppercase;
+}
+
+/* __________________________*/
+
+/* extra small devices 600px and down */
+@media (max-width: 600px) {
+  main {
+    text-align: center;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  h1 {
+    font-size: 4em;
+  }
+  p {
+    font-size: 2em;
+  }
+}
+
+/* small devices - portrait tablets / large phones */
+@media (min-width: 601px) and (max-width: 767px) {
+  h1 {
+    font-size: 5em;
+  }
+}
+
+/* medium devices */
+@media (min-width: 768px) and (max-width: 991px) {
+  p {
+    font-size: 4em;
+  }
+}
+
+/* large devices */
+@media (min-width: 992px) and (max-width: 1199px) {
+  h1 {
+    font-size: 7rem;
+  }
+  p {
+    font-size: 5em;
+  }
+}
+
+/* extra large devices */
+@media (min-width: 1200px) {
+  main {
+    padding: 7em;
+    padding-left: 12em;
+  }
+}
+
+/* __________________________*/
+
+/* EMS MEDIA QUERIES */
+
+/* if [device width] greater than or equal to 480px */
+@media only screen and (min-width: 30em) {
+  main {
+    background-color: aqua;
+    padding: 5rem;
+    color: black;
+  }
+}
+
+/* if [device width] greater than or equal to 600px */
+@media only screen and (min-width: 37.5em) {
+  main {
+    background-color: violet;
+    padding: 5rem;
+    color: black;
+  }
+}
+
+/* if [device width] greater than or equal to 7680px */
+@media only screen and (min-width: 48em) {
+  main {
+    background-color: rgb(238, 236, 130);
+    padding: 5rem;
+    color: black;
+  }
+}
+
+/* if [device width] greater than or equal to 1024px */
+@media only screen and (min-width: 64em) {
+  main {
+    background-color: rgb(0, 255, 76);
+  }
+}
+
+/* if [device width] greater than or equal to 1260px */
+@media only screen and (min-width: 78.75em) {
+  main {
+    background-color: red;
+  }
+}
